@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morija Cultural Festival - Programme</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url('morija.webp');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: white;
+            text-shadow: 1px 1px 4px rgba(0,0,0,0.9);
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            line-height: 1.5;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.50);
+            z-index: -1;
+        }
+
+        /* Navbar - pink background */
+        nav {
+            background: #ff69b4;
+            padding: 15px 30px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+        }
+
+        nav h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: white;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 18px;
+            border-radius: 6px;
+        }
+
+        nav a:hover {
+            background: rgba(255, 255, 255, 0.25);
+        }
+
+        /* Festival intro paragraph (to match home page) */
+        .festival-intro {
+            background: rgba(255, 105, 180, 0.8);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 1200px;
+            border-radius: 8px;
+            font-size: 1.2rem;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        }
+
+        /* Main content area */
+        main {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            color: white;
+        }
+
+        /* Programme Card */
+        .programme-card {
+            background: rgba(0, 0, 0, 0.45);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.6);
+            margin-bottom: 30px;
+        }
+
+        .card-content {
+            background: #ff69b4;
+            padding: 30px;
+            color: white;
+        }
+
+        /* Table styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            color: black; /* Table text is black for readability */
+            text-shadow: none;
+        }
+
+        th {
+            background: #ff69b4;
+            color: white;
+            padding: 15px;
+            font-size: 1.2rem;
+            border: none;
+        }
+
+        td {
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr:nth-child(odd) {
+            background-color: white;
+        }
+
+        tr:hover {
+            background-color: #f0f0f0;
+        }
+
+        /* Programme note */
+        .programme-note {
+            text-align: center;
+            font-size: 1.1rem;
+            margin-top: 20px;
+            color: white;
+            font-style: italic;
+        }
+
+        /* Footer - pink background */
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            background: #ff69b4;
+            color: white;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <h1>Morija Cultural Festival</h1>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="programme.html">Programme</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Festival introduction paragraph (to match home page style) -->
+    <div class="festival-intro">
+        <p>The Morija Cultural Festival is Lesotho's premier celebration of Basotho heritage, bringing together locals and international visitors for three days of traditional music, dance, storytelling, arts, crafts, and authentic Sesotho cuisine in the historic town of Morija.</p>
+    </div>
+
+    <main>
+        <h2>Festival Programme & Schedule</h2>
+        
+        <!-- Programme Table Card -->
+        <div class="programme-card">
+            <div class="card-content">
+                <table border="2">
+                    <tr>
+                        <th>Workshop / Activity</th>
+                        <th>Time</th>
+                        <th>Location</th>
+                    </tr>
+                    <tr>
+                        <td>Basotho Basket Weaving</td>
+                        <td>Sat 10:00-12:00</td>
+                        <td>Craft Tent</td>
+                    </tr>
+                    <tr>
+                        <td>Drumming Circle</td>
+                        <td>Sat 15:00-16:30</td>
+                        <td>Main Stage Area</td>
+                    </tr>
+                    <tr>
+                        <td>Traditional Beadwork</td>
+                        <td>Sun 11:00-13:00</td>
+                        <td>Craft Tent</td>
+                    </tr>
+                    <tr>
+                        <td>Sesotho Language Lesson</td>
+                        <td>Sun 14:00-15:30</td>
+                        <td>Education Tent</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        
+        <p class="programme-note">* Programme subject to minor changes. All times are local time (GMT+2).</p>
+    </main>
+
+    <footer>
+        <p>© 2026 Morija Festival Committee — All Rights Reserved</p>
+    </footer>
+</body>
+</html>

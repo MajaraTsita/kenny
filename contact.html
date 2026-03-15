@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morija Cultural Festival - Contact</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url('morija.webp');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: white;
+            text-shadow: 1px 1px 4px rgba(0,0,0,0.9);
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            line-height: 1.5;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.50);
+            z-index: -1;
+        }
+
+        /* Navbar - pink background */
+        nav {
+            background: #ff69b4;
+            padding: 15px 30px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+        }
+
+        nav h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: white;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 18px;
+            border-radius: 6px;
+        }
+
+        nav a:hover {
+            background: rgba(255, 255, 255, 0.25);
+        }
+
+        /* Festival intro paragraph (to match home page) */
+        .festival-intro {
+            background: rgba(255, 105, 180, 0.8);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 1200px;
+            border-radius: 8px;
+            font-size: 1.2rem;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        }
+
+        /* Main content area */
+        main {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            color: white;
+        }
+
+        h3 {
+            color: white;
+            margin: 0 0 20px 0;
+            font-size: 1.8rem;
+        }
+
+        /* Contact Cards */
+        .contact-card {
+            background: rgba(0, 0, 0, 0.45);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.6);
+            margin-bottom: 30px;
+        }
+
+        .card-content {
+            background: #ff69b4;
+            padding: 30px;
+            color: white;
+        }
+
+        .contact-details {
+            list-style: none;
+            padding: 0;
+        }
+
+        .contact-details p {
+            font-size: 1.2rem;
+            padding: 12px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+            color: white;
+        }
+
+        .contact-details p:last-child {
+            border-bottom: none;
+        }
+
+        .contact-details strong {
+            color: white;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        /* Location Card */
+        .location-card {
+            background: rgba(0, 0, 0, 0.45);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.6);
+            margin-bottom: 30px;
+        }
+
+        .location-content {
+            background: #ff69b4;
+            padding: 30px;
+            color: white;
+        }
+
+        .location-content p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: white;
+        }
+
+        /* Social Media Card */
+        .social-card {
+            background: rgba(0, 0, 0, 0.45);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.6);
+            margin-bottom: 30px;
+        }
+
+        .social-content {
+            background: #ff69b4;
+            padding: 30px;
+            color: white;
+        }
+
+        .social-links {
+            list-style: none;
+            padding: 0;
+        }
+
+        .social-links li {
+            font-size: 1.2rem;
+            padding: 12px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+            color: white;
+        }
+
+        .social-links li:last-child {
+            border-bottom: none;
+        }
+
+        .social-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            margin-right: 10px;
+            transition: text-decoration 0.3s;
+        }
+
+        .social-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer - pink background */
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            background: #ff69b4;
+            color: white;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <h1>Morija Cultural Festival</h1>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="programme.html">Programme</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Festival introduction paragraph (to match home page style) -->
+    <div class="festival-intro">
+        <p>The Morija Cultural Festival is Lesotho's premier celebration of Basotho heritage, bringing together locals and international visitors for three days of traditional music, dance, storytelling, arts, crafts, and authentic Sesotho cuisine in the historic town of Morija.</p>
+    </div>
+
+    <main>
+        <h2>Contact & Social Media</h2>
+        
+        <!-- Contact Details Card -->
+        <div class="contact-card">
+            <div class="card-content">
+                <h3>Get in Touch</h3>
+                <div class="contact-details">
+                    <p><strong>Email:</strong> info@morijafestival.co.ls</p>
+                    <p><strong>Phone:</strong> +266 2231 2345 (office hours 8am–5pm)</p>
+                    <p><strong>WhatsApp:</strong> +266 8123 4567</p>
+                    <p><strong>Location:</strong> Morija Museum & Archives, Main Road, Morija 190, Lesotho</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Location Card -->
+        <div class="location-card">
+            <div class="location-content">
+                <h3>How to Find Us</h3>
+                <p>Morija is located 40km south of Maseru on the A2 highway. The festival grounds are at the Morija Museum & Archives, clearly signposted from the main road.</p>
+                <p style="margin-top: 15px;">Free parking available on site •  Shuttle services from Maseru available (pre-booking required)</p>
+            </div>
+        </div>
+
+        <!-- Social Media Card -->
+        <div class="social-card">
+            <div class="social-content">
+                <h3>Follow Us</h3>
+                <ul class="social-links">
+                    <li><a href="#" target="_blank">Facebook</a> fb.com/morijafest</li>
+                    <li><a href="#" target="_blank">Instagram</a> @morija_cultural</li>
+                    <li><a href="#" target="_blank">X (Twitter)</a> @morijafest</li>
+                    <li><a href="#" target="_blank">YouTube</a> /MorijaFestival</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 Morija Festival Committee — All Rights Reserved</p>
+    </footer>
+</body>
+</html>

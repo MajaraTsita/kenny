@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morija Cultural Festival - About</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url('morija.webp');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: white;
+            text-shadow: 1px 1px 4px rgba(0,0,0,0.9);
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            line-height: 1.5;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.50);
+            z-index: -1;
+        }
+
+        /* Navbar - pink background */
+        nav {
+            background: #ff69b4;
+            padding: 15px 30px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+        }
+
+        nav h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: white;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 18px;
+            border-radius: 6px;
+        }
+
+        nav a:hover {
+            background: rgba(255, 255, 255, 0.25);
+        }
+
+        /* Festival intro paragraph (to match home page) */
+        .festival-intro {
+            background: rgba(255, 105, 180, 0.8);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 1200px;
+            border-radius: 8px;
+            font-size: 1.2rem;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        }
+
+        /* Main content area */
+        main {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            color: white;
+        }
+
+        h3 {
+            color: white;
+            margin: 0 0 15px 0;
+            font-size: 1.8rem;
+        }
+
+        /* Content cards */
+        .content-card {
+            background: rgba(0, 0, 0, 0.45);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.6);
+            margin-bottom: 30px;
+        }
+
+        .card-content {
+            background: #ff69b4;
+            padding: 20px 25px;
+            color: white;
+        }
+
+        .card-content p, .card-content ul {
+            font-size: 1.1rem;
+            color: white;
+        }
+
+        .card-content ul {
+            list-style: disc;
+            padding-left: 30px;
+            margin: 15px 0;
+        }
+
+        .card-content li {
+            margin-bottom: 8px;
+            color: white;
+        }
+
+        /* Image styling - consistent dimensions */
+        .content-img {
+            width: 80%;
+            height: 350px;
+            object-fit: cover;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .image-caption {
+            text-align: center;
+            font-weight: bold;
+            margin: 0;
+            color: white;
+            font-size: 1.2rem;
+        }
+
+        /* Did You Know card - special styling */
+        .didyouknow-card {
+            background: rgba(255, 105, 180, 0.2);
+            border: 2px solid #ff69b4;
+            border-radius: 12px;
+            padding: 25px;
+            margin-top: 40px;
+        }
+
+        .didyouknow-card h3 {
+            color: white;
+            margin-top: 0;
+            font-size: 2rem;
+        }
+
+        .didyouknow-card p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: white;
+        }
+
+        /* Footer - pink background */
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            background: #ff69b4;
+            color: white;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <h1>Morija Cultural Festival</h1>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="programme.html">Programme</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Festival introduction paragraph (to match home page style) -->
+    <div class="festival-intro">
+        <p>The Morija Cultural Festival is Lesotho's premier celebration of Basotho heritage, bringing together locals and international visitors for three days of traditional music, dance, storytelling, arts, crafts, and authentic Sesotho cuisine in the historic town of Morija.</p>
+    </div>
+
+    <main>
+        <h2>About the Event</h2>
+        
+        <!-- Museum Image Card -->
+        <div class="content-card">
+            <img src="museum.webp" alt="Morija Museum exterior with sandstone walls" class="content-img">
+            <div class="card-content">
+                <p class="image-caption">Morija Museums</p>
+            </div>
+        </div>
+
+        <!-- History & Significance Card -->
+        <div class="content-card">
+            <div class="card-content">
+                <h3>History & Significance</h3>
+                <p>The Morija Cultural Festival began in 1999 to celebrate the rich heritage of the Basotho nation. Held in the historic village of Morija — home to the first mission station, museum, and printing press in Lesotho — the festival honours storytelling, indigenous music, and crafts.</p>
+            </div>
+        </div>
+
+        <!-- Target Tourists Card -->
+        <div class="content-card">
+            <div class="card-content">
+                <h3>Target Tourists</h3>
+                <ul>
+                    <li>Culture & heritage enthusiasts</li>
+                    <li>Adventure travellers exploring the 'Kingdom in the Sky'</li>
+                    <li>Families and educational groups</li>
+                    <li>International tourists seeking authentic African experiences</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Tourists Learning Image Card -->
+        <div class="content-card">
+            <img src="tourists.avif" alt="Tourists learning about Morija history at the museum" class="content-img">
+            <div class="card-content">
+                <p class="image-caption">Tourists Learning About Morija History</p>
+            </div>
+        </div>
+        
+        <!-- Did You Know Card -->
+        <div class="didyouknow-card">
+            <h3>Did You Know?</h3>
+            <p>Morija is home to the first printing press in Lesotho (established 1861), where the first Sesotho language books were published. The festival celebrates this rich literary history alongside music and dance!</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 Morija Festival Committee — All Rights Reserved</p>
+    </footer>
+</body>
+</html>

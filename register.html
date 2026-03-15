@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morija Cultural Festival - Register</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url('morija.webp');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: white;
+            text-shadow: 1px 1px 4px rgba(0,0,0,0.9);
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            line-height: 1.5;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.50);
+            z-index: -1;
+        }
+
+        /* Navbar - pink background */
+        nav {
+            background: #ff69b4;
+            padding: 15px 30px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+        }
+
+        nav h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: white;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 18px;
+            border-radius: 6px;
+        }
+
+        nav a:hover {
+            background: rgba(255, 255, 255, 0.25);
+        }
+
+        /* Festival intro paragraph (to match home page) */
+        .festival-intro {
+            background: rgba(255, 105, 180, 0.8);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 1200px;
+            border-radius: 8px;
+            font-size: 1.2rem;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        }
+
+        /* Main content area */
+        main {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            color: white;
+        }
+
+        h3 {
+            color: white;
+            margin: 0 0 20px 0;
+            font-size: 1.8rem;
+        }
+
+        /* Pricing Card */
+        .pricing-card {
+            background: rgba(0, 0, 0, 0.45);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.6);
+            margin-bottom: 30px;
+        }
+
+        .card-content {
+            background: #ff69b4;
+            padding: 30px;
+            color: white;
+        }
+
+        .price-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .price-list li {
+            font-size: 1.2rem;
+            padding: 12px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+            color: white;
+        }
+
+        .price-list li:last-child {
+            border-bottom: none;
+        }
+
+        /* Registration Form Card */
+        .form-card {
+            background: rgba(0, 0, 0, 0.45);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.6);
+            margin-bottom: 30px;
+        }
+
+        .form-content {
+            background: #ff69b4;
+            padding: 30px;
+            color: white;
+        }
+
+        .registration-form {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #333;
+            text-shadow: none;
+        }
+
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #ff69b4;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-family: Arial, sans-serif;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: #ff1493;
+        }
+
+        button {
+            background: #ff69b4;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+            width: 100%;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background: #ff1493;
+        }
+
+        /* Footer - pink background */
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            background: #ff69b4;
+            color: white;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <h1>Morija Cultural Festival</h1>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="programme.html">Programme</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Festival introduction paragraph (to match home page style) -->
+    <div class="festival-intro">
+        <p>The Morija Cultural Festival is Lesotho's premier celebration of Basotho heritage, bringing together locals and international visitors for three days of traditional music, dance, storytelling, arts, crafts, and authentic Sesotho cuisine in the historic town of Morija.</p>
+    </div>
+
+    <main>
+        <h2>Tickets & Registration</h2>
+        
+        <!-- Pricing Card -->
+        <div class="pricing-card">
+            <div class="card-content">
+                <h3>Pricing (Lesotho Loti / ZAR equivalent)</h3>
+                <ul class="price-list">
+                    <li>Adult weekend pass: M250</li>
+                    <li>Child (6–12 years): M80</li>
+                    <li>Family pass (2 adults + 2 children): M550</li>
+                    <li>Group of 10+ : M200 per person</li>
+                    <li>International visitors: special combo (festival + museum tour) M300</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Registration Form Card -->
+        <div class="form-card">
+            <div class="form-content">
+                <h3>Register Now</h3>
+                <form class="registration-form">
+                    <div class="form-group">
+                        <label for="name">Full name *</label>
+                        <input type="text" id="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pass-type">Ticket type *</label>
+                        <select id="pass-type">
+                            <option>Adult weekend pass</option>
+                            <option>Child pass</option>
+                            <option>Family pass</option>
+                            <option>Group pass</option>
+                            <option>International combo</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="quantity">Number of tickets *</label>
+                        <input type="number" id="quantity" min="1" value="1">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="visit-date">Preferred Festival Day (optional)</label>
+                        <select id="visit-date">
+                            <option>Full Weekend (All 3 days)</option>
+                            <option>Friday Only (May 23)</option>
+                            <option>Saturday Only (May 24)</option>
+                            <option>Sunday Only (May 25)</option>
+                        </select>
+                    </div>
+
+                    <button type="submit">Book Now</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 Morija Festival Committee — All Rights Reserved</p>
+    </footer>
+</body>
+</html>
